@@ -1,0 +1,14 @@
+from collections import namedtuple
+
+School = namedtuple("School", ["name", "city", "state", "enrollment"])
+
+school_name = input()
+city_located = input()
+state_located = input()
+enrollment_count = int(input())
+
+""" Your code goes here """
+
+school_data = School(school_name, city_located, state_located, enrollment_count)
+
+print(f"School name: {school_data.name}, City: {school_data.city}, State: {school_data.state}, Enrollment: {school_data.enrollment}")

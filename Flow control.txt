@@ -1,0 +1,91 @@
+1 What are the two values of the Boolean data type? How do you write them?
+Two values of the Boolean data type are true and false.
+They are written as true, false
+
+2 What are the three Boolean operators?
+Boolean operators are and, or and not
+
+3 Write out the truth tables of each Boolean operator (that is, every possible combination of Boolean values for the operator and what they evaluate to).
+Truth table (with and)
+True and True --> True
+True and False --> False
+False and True --> False
+
+Truth table (with or)
+True or True --> True
+True or False --> True
+False or True --> True
+False or False --> False
+
+True table (with not)
+not True --> False
+not False --> True
+
+4 What do the following expressions evaluate to?
+
+(5 > 4) and (3 == 5) --> true and false --> false
+not (5 > 4) --> not true --> false
+(5 > 4) or (3 == 5) --> true or false --> true
+not ((5 > 4) or (3 == 5)) --> false or false --> false
+(True and True) and (True == False) --> true and false --> false
+(not False) or (not True) --> true or false --> true
+
+5 What are the six comparison operators?
+The six comparison operators are: 
+equal to  == 
+not equal to  != 
+less than  <
+greater than >
+less than or equal to <=
+greater than or equal to >=
+
+6 What is the difference between the equal to operator and the assignment operator?
+The assignment operator (=) stores a value into a variable.
+The equal‑to operator (==) compares two values and produces a Boolean result.
+
+7 Explain what a condition is and where you would use one.
+Condition is an expression that can produce a Boolean result true or false. We use the condition when we want to check a condition to meet the expectation to proceed the task, as in every flow control statement.
+
+8 Identify the three blocks in this code:
+
+spam = 0
+if spam == 10:
+    print('eggs')
+    if spam > 5:
+        print('bacon')
+    else:
+        print('ham')
+    print('spam')
+print('spam')
+
+The code has the following block according to the indented section
+
+The outer if block
+spam = 0
+
+The if block
+if spam == 10:
+    print('eggs')
+    if spam > 5:
+        print('bacon')
+        
+The elif block
+    else:
+        print('ham')
+
+The inner if block
+    print('spam')
+
+and the outer if block
+print('spam')
+
+9 Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints Greetings! if anything else is stored in spam.
+
+spam = int(input())
+if spam == 1:
+    print("Hello")
+elif spam == 2:
+    print("Howdy")
+else:
+    print("Greetings!")
+
